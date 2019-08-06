@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg_rg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <RadioButton
+            android:id="@+id/rb_home_page"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/home_page_checked"
+            android:text="首页"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/home_page_radio_checked" />
+        <RadioButton
+            android:id="@+id/rb_mall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/mall_checked"
+            android:text="商城"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/home_page_radio_checked"/>
+        <RadioButton
+            android:id="@+id/rb_service_order"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/service_checked"
+            android:text="服务订单"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/home_page_radio_checked"/>
+
+        <RadioButton
+            android:id="@+id/rb_goods_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/goods_order_checked"
+            android:gravity="center_horizontal"
+            android:text="商品订单"
+            android:textColor="@color/home_page_radio_checked"
+            android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/rb_personal_center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/personal_center_checked"
+            android:text="个人中心"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/home_page_radio_checked" />
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <attr name="starDistance" format="integer"/>
+        <attr name="starSize" format="integer"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starEmpty" format="reference"/>
+        <attr name="starFill" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="star">
+       <attr name="margin" format="integer"/>
+        <attr name="isEdit" format="boolean"/>
+        <attr name="score" format="integer"/>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FamilyMembersEnd.iml" filepath="$PROJECT_DIR$/FamilyMembersEnd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Framwork/Framwork.iml" filepath="$PROJECT_DIR$/Framwork/Framwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chooseaddress/chooseaddress.iml" filepath="$PROJECT_DIR$/chooseaddress/chooseaddress.iml" />
+    </modules>
+  </component>
+</project>

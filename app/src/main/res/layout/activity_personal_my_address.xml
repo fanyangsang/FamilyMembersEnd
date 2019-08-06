@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_two">
+    <include layout="@layout/item_address_head"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/ll_content"
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp">
+        </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/ll_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:background="#df0f03"
+        android:gravity="center">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/personal_my_address_plus" />
+        <TextView
+            android:id="@+id/tv_new_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增地址"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

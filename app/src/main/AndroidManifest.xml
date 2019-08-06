@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wlan.familymembers">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".app.FamilyMembersApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- 支付宝App支付页面用的 -->
+
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d35cb1e915f83255f02918e54ddca106">
+
+            <!-- 开发者申请的key -->
+        </meta-data>
+
+        <!-- 支付宝H5页面支付用的 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 支付宝App支付页面用的 -->
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!--微信支付-->
+        <activity android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx9cc4a7a2a1ff958a" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.entrance.LoginActivity" />
+        <activity android:name=".view.activity.entrance.RegisterActivity" />
+        <activity android:name=".view.activity.entrance.FindPasswordActivity" />
+        <activity android:name=".view.activity.service.ServiceAgreementActivity" />
+        <activity android:name=".view.activity.service.ServiceListActivity" />
+        <activity android:name=".view.activity.service.ServiceDetailsActivity" />
+        <activity android:name=".view.activity.mall.MallDetailsActivity" />
+        <activity android:name=".view.activity.home.HomeCommonActivity" />
+        <activity android:name=".view.activity.goodsorder.PaymentDetailsActivity" />
+        <activity android:name=".view.activity.personal.MemberCenterActivity" />
+        <activity android:name=".view.activity.personal.MyAddressActivity" />
+        <activity android:name=".view.activity.personal.EditAddressActivity" />
+        <activity android:name=".view.activity.personal.BaseInformationActivity" >
+
+        </activity>
+        <activity android:name=".view.activity.personal.ChangePasswordActivity" />
+        <activity android:name=".view.activity.personal.ContactCustomerActivity" />
+        <activity android:name=".view.activity.personal.AboutUsActivity" />
+        <activity android:name=".view.activity.personal.HelpCenterActivity" />
+        <activity android:name=".view.activity.personal.MyCouponActivity" />
+        <activity android:name=".view.activity.personal.CouponNotesActivity" />
+        <activity android:name=".view.activity.personal.ChangePhoneActivity" />
+        <activity android:name=".view.activity.personal.HelpCenterDetailsActivity" />
+        <activity android:name=".view.activity.home.CityPickerActivity" />
+        <activity android:name=".view.activity.home.SearchActivity" />
+        <activity android:name=".view.activity.home.WebViewActivity" />
+        <activity android:name=".view.activity.goodsorder.GoodsPayActivity"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yykj.FamilyMembers.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name=".view.activity.goodsorder.ServicePaymentDetailsActivity"></activity>
+    </application>
+
+</manifest>

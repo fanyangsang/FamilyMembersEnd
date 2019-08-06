@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:id="@+id/tv_alipay"
+        android:layout_marginTop="10dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/alipay3" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:id="@+id/tv_we_chat"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/weixinpay3"/>
+
+</LinearLayout>

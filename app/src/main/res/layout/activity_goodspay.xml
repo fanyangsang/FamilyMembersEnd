@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_two">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <include layout="@layout/item_head"/>
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="100元"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="120dp" />
+        <Button
+            android:id="@+id/alipay_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="10dp"
+            android:background="#7FFFD4"
+            android:text="确认支付"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

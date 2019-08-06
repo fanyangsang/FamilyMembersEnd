@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_two"
+    android:id="@+id/ll_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="gone">
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@mipmap/goods_order_null"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您还没有相关订单"
+        android:textSize="14sp"
+        android:textColor="#717171"/>
+    <Button
+        android:id="@+id/btn_immediate_order"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:background="@drawable/goods_order_null_button_box"
+        android:text="立即下单"
+        android:textSize="14sp"
+        android:textColor="#d51804"/>
+
+</LinearLayout>

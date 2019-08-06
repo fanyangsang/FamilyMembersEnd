@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e0e0e0</color>
+    <color name="colorPrimaryDark">#e0e0e0</color>
+    <color name="colorAccent">#e41107</color>
+    <color name="white">#ffffff</color>
+    <color name="word_hui">#666666</color>
+    <color name="lines_color">#cccccc</color>
+    <color name="red">#e10e05</color>
+    <color name="black">#000000</color>
+    <color name="background">#f1f1f1</color>
+    <color name="background_two">#eeeeee</color>
+    <color name="red_two">#df0f03</color>
+    <color name="red_three">#e00f04</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#808080</color>
+    <color name="gray3">#ada6a2a2</color>
+    <color name="gray1">#cccccc</color>
+    <color name="gray2">#efefef</color>
+
+
+</resources>

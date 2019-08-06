@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="1dp">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="标题"
+         android:textSize="16sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tv_fu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tv_title"
+        android:text="付标题"
+        android:textColor="#686868"
+        android:textSize="14sp"/>
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_fu_title"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/one_n"/>
+    <View
+        android:layout_alignParentBottom="true"
+        android:id="@+id/v_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+    <View
+        android:id="@+id/v_two"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#efefef"/>
+
+
+</RelativeLayout>
